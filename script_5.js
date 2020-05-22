@@ -48,6 +48,7 @@ function script5_findID(){
 // Supprime le livre avec l'ID: 133712
 function script5_deleteID(){
     delete books[books.findIndex(element => (element.id == 133712))];
+    console.log('Object deleted');
 }
 
 // Trie les livres par ordre alphabétique (sans celui avec l'ID 133712 car il est supprimé).
