@@ -30,7 +30,8 @@ function script4_isBornBeforeDate(){
 
     console.log('by create approach:')
     const createdList = [];
-    entrepreneurs.forEach((element) => {
+    const temp = Array.from(entrepreneurs);
+    temp.forEach((element) => {
         if(element.year > 1969 && element.year < 1980){
             let obj = {
                 first: element.first,
@@ -44,14 +45,6 @@ function script4_isBornBeforeDate(){
 }
 // Sors une array qui contient le prénom et le nom des entrepreneurs ;
 function script4_getName(){
-    console.log('by delete approach:')
-    const deletedList = entrepreneurs.slice();
-    deletedList.forEach((element) => {
-        delete element.year;
-    });
-    console.log(deletedList);
-
-    console.log('by create approach:')
     var createdList = [];
     entrepreneurs.forEach((element) => {
         let obj = {
@@ -64,6 +57,7 @@ function script4_getName(){
 }
 // Quel âge aurait chaque inventeur aujourd'hui ?
 function script4_getAgeToDate(){
+    console.log(entrepreneurs);
     const list = entrepreneurs.slice();
     nowYear = new Date().getFullYear();
     list.forEach((element) =>{
