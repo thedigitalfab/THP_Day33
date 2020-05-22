@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fichier de test JS</title>
+
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-b+jboW/YIpW2ZZYyYdXczKK6igHlnkPNfN9kYAbqYV7rNQ9PKTXlS2D6j1QZIATW" crossorigin="anonymous">
+        
+        <!-- Main Styles CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Javascript -->
+        <script src="script_1.js"></script>
+        <script src="script_2.js"></script>
+        <script src="script_3.js"></script>
+        <script src="script_4.js"></script>
+        <script src="script_5.js"></script>
+        <script src="script_6.js"></script>
+        <script src="script_7.js"></script>
+    </head>
+
+    <body>
+        <!-- ================================================== -->
+        <!-- Javascript Basic - UI  -->
+        <!-- ================================================== -->
+        <div class="container">
+            <!-- Javascript Basic - Exercice 1  -->
+            <div class="ui-block">
+                <div class="ui-block-title">Exercice 1:</div>
+                <div class="ui-block-content">
+                    <div class="ui-block">
+                        <div class="ui-block-title">1. "Hello Monde":</div>
+                        <div class="ui-block-content">
+                            <button class="btn btn-primary" type="button" onclick="script1_showMessage();">Get Result</button>
+                        </div>
+                    </div>
+                    <div class="ui-block">
+                        <div class="ui-block-title">2. "Hello, Prénom":</div>
+                        <div class="ui-block-content">
+                            <input class="form-control" type="text" placeholder="Saisi ton nom..." id="myName">
+                            <button class="btn btn-primary" type="button" onclick="script1_showNamedMessage();">Get Result</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Javascript Basic - Exercice 2  -->
+            <div class="ui-block">
+                <div class="ui-block-title">Exercice 2:</div>
+                <div class="ui-block-content">
+                    <div class="ui-block">
+                        <div class="ui-block-title">1. "Factorielle":</div>
+                        <div class="ui-block-content">
+                            <input class="form-control" type="text" placeholder="Factorielle..." id="inputFactorial">
+                            <button class="btn btn-primary" type="button" onclick="script2_showFactorial();">Get Result</button>
+                        </div>
+                    </div>
+                    <div class="ui-block">
+                        <div class="ui-block-title">2. "Pyramide de Mario":</div>
+                        <div class="ui-block-content">
+                            <input class="form-control" type="text" placeholder="Nombre d'etages..." id="inputPyramid">
+                            <button class="btn btn-primary" type="button" onclick="script3_showPyramid();">Get Result</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Javascript Basic - Exercice 3  -->
+            <div class="ui-block">
+                <div class="ui-block-title">Exercice 3:</div>
+                <div class="ui-block-content">
+                    <div class="ui-block">
+                        <div class="ui-block-title">1. "Startup Nation":</div>
+                        <div class="ui-block-content">
+                            <p>
+                                Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70 ;
+                                <button class="btn btn-primary" type="button" onclick="script4_isBornBeforeDate();">Get Result</button>
+                            </p>
+                            <p>
+                                Sors une array qui contient le prénom et le nom des entrepreneurs ;
+                                <button class="btn btn-primary" type="button" onclick="script4_getName();">Get Result</button>
+                            </p>
+                            <p>
+                                Quel âge aurait chaque inventeur aujourd'hui ?
+                                <button class="btn btn-primary" type="button" onclick="script4_getAgeToDate();">Get Result</button>
+                            </p>
+                            <p>
+                                Trie les entrepreneurs par ordre alphabétique du nom de famille.
+                                <button class="btn btn-primary" type="button" onclick="script4_sortAlphabetical();">Get Result</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block">
+                        <div class="ui-block-title">2. "Bibliothequaire":</div>
+                        <div class="ui-block-content">
+                            <p>
+                                Est-ce que tous les livres ont été au moins empruntés une fois ?
+                                <button class="btn btn-primary" type="button" onclick="script5_isAllRented();">Get Result</button>
+                            </p>
+                            <p>
+                                Quel est livre le plus emprunté ?
+                                <button class="btn btn-primary" type="button" onclick="script5_getMostRented();">Get Result</button>
+                            </p>
+                            <p>
+                                Quel est le livre le moins emprunté ?
+                                <button class="btn btn-primary" type="button" onclick="script5_getLessRented();">Get Result</button>
+                            </p>
+                            <p>
+                                Trouve le livre avec l'ID: 873495 ;
+                                <button class="btn btn-primary" type="button" onclick="script5_findID();">Get Result</button>
+                            </p>
+                            <p>
+                                Supprime le livre avec l'ID: 133712 ;
+                                <button class="btn btn-danger" type="button" onclick="script5_deleteID();">Get Result</button>
+                            </p>
+                            <p>
+                                Trie les livres par ordre alphabétique (sans celui avec l'ID 133712 car il est supprimé).
+                                <button class="btn btn-primary" type="button" onclick="script5_sortList();">Get Result</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Javascript Basic - Exercice 4  -->
+            <div class="ui-block">
+                <div class="ui-block-title">Exercice 4:</div>
+                <div class="ui-block-content">
+                    <div class="ui-block">
+                        <div class="ui-block-title">1. "Code la vie":</div>
+                        <div class="ui-block-content">
+                            <button class="btn btn-primary" type="button" onclick="script6_showMeLife();">Get Result</button>
+                        </div>
+                    </div>
+                    <div class="ui-block">
+                        <div class="ui-block-title">2. "Acne Bot":</div>
+                        <div class="ui-block-content">
+                            <textarea class="form-control" rows="5" type="text" placeholder="Saisi ton texte..." id="botText"></textarea>
+                            <button class="btn btn-primary" type="button" onclick="script7_getAcneBotAnswer();">Get Result</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
